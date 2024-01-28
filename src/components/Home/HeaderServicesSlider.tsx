@@ -1,6 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 import { Check } from "lucide-react";
 
 // Import Swiper styles
@@ -9,27 +7,19 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination , Autoplay } from "swiper/modules";
-
-
-
-
-
+import { useGetServices } from "@/api/services/useGetServices";
+import { IService } from "@/type/services/service.type";
 
 const HeaderServicesSlider = () => {
 
-    const {data , isLoading , isError} = useQuery({
-        queryKey: ["services"],
-        queryFn : () => {
-            return axios.get("http://localhost:3000/services")
-        }
-    })
+    const {data , isLoading , isError} = useGetServices()
 
     if (isLoading) {
         return <p>Loading</p>
     }
-
-    console.log(data?.data);
-    
+    if (isError) {
+        return <p>Something Went Wrong</p>
+    }
 
   return (
     <div className="mt-5 ">
@@ -46,7 +36,7 @@ const HeaderServicesSlider = () => {
           modules={[Autoplay, Pagination]}
       >
         {
-           data?.data.map(service => <SwiperSlide key={service._id}>
+           data?.data.map((service : IService) => <SwiperSlide key={service._id}>
            <div className="space-y-4">
             <img className="rounded-md" src={service.image} alt="service event" />
             <h2 className="text-3xl">{service.name}</h2>
@@ -56,7 +46,7 @@ const HeaderServicesSlider = () => {
                 </div> )}
             </div>
 
-            <button className="btn w-full ">View Details</button>
+            <button className="btn w-full bg-gradient-to-r from-[#00D4FC] via-transparent to-[#00FEE3] ">View Details</button>
            </div>
 
            </SwiperSlide> )

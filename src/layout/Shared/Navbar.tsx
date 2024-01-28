@@ -17,7 +17,7 @@ const Navbar = () => {
   );
 
   return (
-    <header className="bg-[#02011B] py-6">
+    <header className="bg-[#02011B] py-10">
       <Container>
         <nav className="flex justify-between items-center">
           <div>

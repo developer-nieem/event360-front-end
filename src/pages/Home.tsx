@@ -1,8 +1,9 @@
+import ServicesSection from "@/components/Home/ServicesSection";
 
 const Home = () => {
     return (
-        <div className="bg-[]">
-          
+        <div >
+          <ServicesSection/>
         </div>
     );
 };
