@@ -1,4 +1,5 @@
-import { Button } from "./components/ui/button"
+
+import MainLayout from "./layout/MainLayout"
 
 
 function App() {
@@ -7,7 +8,10 @@ function App() {
 
   return (
     <>
-      <Button>Hello</Button>
+    
+     <MainLayout/>
+   
+     
     </>
   )
 }
