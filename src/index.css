@@ -77,3 +77,24 @@
     font-family : roboto;
   }
 }
+
+
+
+/* Header bg image */
+
+.header-left{
+ background:linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%), url("./assets/header1.png");
+ background-size : cover;
+
+}
+
+
+.swiper-pagination-bullet{
+  background: #fff !important ; 
+  margin-top : 20px
+}
+
+.swiper {
+  padding-bottom: 40px !important;
+}
+
