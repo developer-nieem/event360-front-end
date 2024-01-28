@@ -27,7 +27,7 @@ const EventSection = () => {
             <Container>
                
                <div>
-                <SectionHeading heading="Event Items" paragraph="Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh ornare viverra. Ultrices faucibus neque velit risus ac id lorem."/>
+                <SectionHeading  heading="Event Items" paragraph="Ut posuere felis arcu tellus tempus in in ultricies. Gravida id nibh ornare viverra. Ultrices faucibus neque velit risus ac id lorem."/>
                </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 py-16">
