@@ -1,5 +1,6 @@
 import EventSection from "@/components/Home/EventSection";
 import GallerySection from "@/components/Home/GallerySection";
+import PricingSection from "@/components/Home/PricingSection";
 import ServicesSection from "@/components/Home/ServicesSection";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
           <ServicesSection/>
           <EventSection/>
           <GallerySection/>
+          <PricingSection/>
         </div>
     );
 };
