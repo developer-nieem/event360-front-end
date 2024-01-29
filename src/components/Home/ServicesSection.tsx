@@ -8,10 +8,10 @@ const ServicesSection = () => {
   const { data, isLoading, isError } = useGetServices();
 
   if (isLoading) {
-    return <p>Loading</p>;
+    return ;
   }
   if (isError) {
-    return <p>Something Went Wrong</p>;
+    return ;
   }
 
   return (

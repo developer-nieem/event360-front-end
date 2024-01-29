@@ -4,7 +4,7 @@ import { Accessibility, Euro, Globe } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#0F172A] border border-slate-600 py-10">
+    <div className="bg-[#0F172A] border-t border-slate-600 py-10">
       <Container>
         <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-10">
           <div>
