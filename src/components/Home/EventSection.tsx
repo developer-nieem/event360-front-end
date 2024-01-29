@@ -3,16 +3,12 @@ import SectionHeading from "../ui/SectionHeading";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import { IEvents } from "@/type/events/events.type";
+import { useGetEventItem } from "@/api/EventItem/useGetEventItem";
 
 
 const EventSection = () => {
 
-    const {data , isLoading , isError} = useQuery({
-        queryKey : ["event"],
-        queryFn : () =>{
-            return axios.get("http://localhost:3000/event-item")
-        }
-    })
+    const {data , isLoading , isError} = useGetEventItem()
 
     if (isLoading) {
         return ;

@@ -1,7 +1,10 @@
 import App from "@/App";
+import AdminLayout from "@/layout/AdminLayout";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
+import EventItemManagement from "@/pages/EventItemManagement";
 import Home from "@/pages/Home";
+import ServicesManagement from "@/pages/ServicesManagement";
 import { createBrowserRouter } from "react-router-dom";
 
 export const route = createBrowserRouter([
@@ -21,6 +24,26 @@ export const route = createBrowserRouter([
                 path:'/contact',
                 element: <Contact/>
             },
+           
+        ]
+    },
+    {
+        path: '/admin',
+        element: <AdminLayout/>,
+        children: [
+    
+            {
+                path:'/admin',
+                element: <EventItemManagement/>
+            },
+            {
+                path:'event-item-management',
+                element: <EventItemManagement/>
+            },
+            {
+                path:'services-management',
+                element: <ServicesManagement/>
+            }
            
         ]
     }
