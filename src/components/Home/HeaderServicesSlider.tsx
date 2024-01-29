@@ -27,8 +27,7 @@ const HeaderServicesSlider = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Pagination]}
-       
+      
         autoplay={{
             delay: 2500,
             disableOnInteraction: false,

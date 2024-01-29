@@ -1,8 +1,11 @@
+import Container from "@/layout/Shared/Container";
 import HeaderServicesSlider from "./HeaderServicesSlider";
 
 
 const HeaderSection = () => {
     return (
+               <header className="bg-[#02011B] pb-14">
+                <Container>
                 <div className="grid pt-10 grid-cols-12 text-white gap-5">
                         <div className="col-span-12 lg:col-span-7 header-left h-[708px] flex flex-col justify-end px-11 pb-10 gap-2">
                             <h1 className="text-5xl font-bold">New Packages For Winter</h1>
@@ -15,6 +18,8 @@ const HeaderSection = () => {
                          <HeaderServicesSlider/>
                         </div>
                 </div>
+                </Container>
+               </header>
 
     );
 };

@@ -3,7 +3,6 @@ import Container from "./Container";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import HeaderSection from "@/components/Home/HeaderSection";
 
 const Navbar = () => {
   const [responsive, setResponsive] = useState(false);
@@ -17,7 +16,7 @@ const Navbar = () => {
   );
 
   return (
-    <header className="bg-[#02011B] py-10">
+    <div className="bg-[#02011B] py-6">
       <Container>
         <nav className="flex justify-between items-center">
           <div>
@@ -46,9 +45,9 @@ const Navbar = () => {
 
         </nav>
 
-        <HeaderSection/>
+       
       </Container>
-    </header>
+    </div>
   );
 };
 

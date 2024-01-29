@@ -3,15 +3,16 @@ import SectionHeading from "../ui/SectionHeading";
 import { motion } from "framer-motion";
 const SubscribeSection = () => {
   return (
-    <div className="bg-[#070B15] pb-40">
+    <div className=" bg-[#0F172A] ">
       <Container>
-        <SectionHeading
+       <div className="bg-[#070B15] h-96 rounded-lg shadow-black">
+       <SectionHeading
           heading="Get Exclusive Updates!"
-          paragraph="Subscribe now to receive our latest news, special offers, and exclusive content straight to your inbox. Join our community of enthusiasts and be the first to know about exciting developments, upcoming events, and insider insights. Don't miss out – subscribe today for a front-row seat to all things Event"
+          paragraph="Subscribe now to receive our latest news, special offers, and exclusive content straight to your inbox. "
         />
 
         <div className="text-center pt-4 ">
-          <form className="md:space-x-4 flex flex-col gap-4 md:flex-row justify-center">
+          <form className=" flex flex-col gap-4 md:flex-row justify-center">
             <motion.input
               type="text"
               className="input w-full md:w-5/12 o"
@@ -32,6 +33,7 @@ const SubscribeSection = () => {
             </div>
           </form>
         </div>
+       </div>
       </Container>
     </div>
   );
