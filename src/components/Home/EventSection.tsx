@@ -1,7 +1,5 @@
 import Container from "@/layout/Shared/Container";
 import SectionHeading from "../ui/SectionHeading";
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 import { IEvents } from "@/type/events/events.type";
 import { useGetEventItem } from "@/api/EventItem/useGetEventItem";
 

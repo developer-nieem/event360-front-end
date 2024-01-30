@@ -1,7 +1,7 @@
 import { useGetEventItem } from "@/api/EventItem/useGetEventItem";
 import { IEvents } from "@/type/events/events.type";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
@@ -33,7 +33,7 @@ const EditEvent = () => {
 
   const queryCLient = useQueryClient();
 
-  const { mutateAsync } = useMutation({
+  const { mutateAsync } = useMutation<void, AxiosError, Inputs>({
     mutationFn: async (data) => {
       return await axios.put(`http://localhost:3000/event-item/${id}`, data);
     },

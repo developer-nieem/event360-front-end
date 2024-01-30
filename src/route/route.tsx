@@ -7,7 +7,6 @@ import Contact from "@/pages/Contact";
 import EventItemManagement from "@/pages/EventItemManagement";
 import Home from "@/pages/Home";
 import RecentEventManagement from "@/pages/RecentEventManagement";
-import ServicesManagement from "@/pages/RecentEventManagement";
 import { createBrowserRouter } from "react-router-dom";
 
 export const route = createBrowserRouter([

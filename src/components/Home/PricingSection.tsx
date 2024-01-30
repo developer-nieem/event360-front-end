@@ -9,10 +9,10 @@ const PricingSection = () => {
           <h4 className="text-lg">PRICING</h4>
           <h2 className="text-6xl">Package Pricing</h2>
         </div>
-        <div className="grid grid-cols-12 gap-12">
+        <div className="grid md:grid-cols-12 gap-12">
 
              {/* 1st pricing column */}
-          <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-[#11151E] text-white p-16 space-y-4 rounded-md h-[536px] flex flex-col justify-between">
+          <div className="  md:col-span-6 lg:col-span-4 bg-[#11151E] text-white p-16 space-y-4 rounded-md h-[536px] flex flex-col justify-between ">
            <div>
            <h4 className="text-xl">STANDARD</h4>
             <h2 className="text-4xl">$120</h2>
@@ -31,7 +31,7 @@ const PricingSection = () => {
           </div>
 
            {/* 2nd pricing column */}
-          <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-[#0038B4] text-white p-16 space-y-4 rounded-md h-[536px] lg:h-[588px] flex flex-col justify-between lg:-mt-12">
+          <div className=" md:col-span-6 lg:col-span-4 bg-[#0038B4] text-white p-16 space-y-4 rounded-md h-[536px] lg:h-[588px] flex flex-col justify-between lg:-mt-12">
            <div>
            <h4 className="text-xl">PREMIUM</h4>
             <h2 className="text-4xl">$180</h2>
@@ -54,7 +54,7 @@ const PricingSection = () => {
           </div>
 
           {/* 3rd pricing column */}
-          <div className="col-span-12 md:col-span-6 lg:col-span-4 bg-[#11151E] text-white p-16 space-y-4 rounded-md h-[536px] flex flex-col justify-between">
+          <div className=" md:col-span-6 lg:col-span-4 bg-[#11151E] text-white p-16 space-y-4 rounded-md h-[536px] flex flex-col justify-between">
            <div>
            <h4 className="text-xl">ENTERPRISE</h4>
             <h2 className="text-4xl">$200</h2>

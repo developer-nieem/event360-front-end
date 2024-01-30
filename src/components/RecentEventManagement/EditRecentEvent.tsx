@@ -1,6 +1,6 @@
 import { useGetRecentEvent } from "@/api/RecentEvent/useGetRecentEvent";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { useEffect, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router-dom";
@@ -11,6 +11,11 @@ type Inputs = {
   organizerName: string;
   image: string;
 };
+
+
+type IItem =  {
+  _id : string
+}
 
 const EditRecentEvent = () => {
   const [recentEventName, setEventName] = useState("");
@@ -25,7 +30,7 @@ const EditRecentEvent = () => {
 
   const { data } = useGetRecentEvent();
 
-  const recentEvent = data?.data.find((item) => item._id === id);
+  const recentEvent = data?.data.find((item : IItem ) => item._id === id);
 
   useEffect(() => {
     setEventName(recentEvent?.eventName);
@@ -35,9 +40,10 @@ const EditRecentEvent = () => {
 
   const queryClient = useQueryClient();
 
-  const { mutateAsync } = useMutation({
+  const { mutateAsync } = useMutation<void, AxiosError, Inputs>({
     mutationFn: async (data) => {
       return await axios.put(`http://localhost:3000/recent-event/${id}`, data);
+      
     },
 
     onSuccess: () => {

@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 
 
-const RemoveRecentEvent = ({id}) => {
+const RemoveRecentEvent = ({ id }: { id: string }) => {
 
 
 

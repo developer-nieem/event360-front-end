@@ -3,6 +3,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from ".
 import { useGetRecentEvent } from "@/api/RecentEvent/useGetRecentEvent";
 import { Edit } from "lucide-react";
 import RemoveRecentEvent from "./RemoveRecentEvent";
+import { IRecentEvent } from "@/type/recentEvent/recentEvent.type";
 
 
 
@@ -35,7 +36,7 @@ const ListRecentEvent = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {data?.data.map((event ) => (
+          {data?.data.map((event :IRecentEvent ) => (
             <TableRow key={event._id}>
               <TableCell className="font-medium">{event.eventName} </TableCell>
               <TableCell className="font-medium">by {event.organizerName} </TableCell>

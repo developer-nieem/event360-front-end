@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { SubmitHandler, useForm } from "react-hook-form"
 import Swal from 'sweetalert2'
 
@@ -20,7 +20,7 @@ const AddEvent = () => {
    
 
 
-      const {mutateAsync } = useMutation({
+      const {mutateAsync } = useMutation<void, AxiosError, Inputs>({
 
         mutationFn : async(data ) => {
          return await axios.post('http://localhost:3000/event-item', data)

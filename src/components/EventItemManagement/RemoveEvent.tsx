@@ -5,7 +5,7 @@ import { Trash } from "lucide-react";
 import Swal from "sweetalert2";
 
 
-const RemoveEvent = ({id}) => {
+const RemoveEvent = ({ id }: { id: string }) => {
 
 
     const queryClient =  useQueryClient()
