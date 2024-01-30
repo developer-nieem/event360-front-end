@@ -1,4 +1,5 @@
 import App from "@/App";
+import EditEvent from "@/components/EventItemManagement/EditEvent";
 import AdminLayout from "@/layout/AdminLayout";
 import About from "@/pages/About";
 import Contact from "@/pages/Contact";
@@ -39,6 +40,10 @@ export const route = createBrowserRouter([
             {
                 path:'event-item-management',
                 element: <EventItemManagement/>
+            },
+            {
+                path:'event-item-management/:id',
+                element: <EditEvent/>
             },
             {
                 path:'services-management',

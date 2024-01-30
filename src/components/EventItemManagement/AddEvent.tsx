@@ -1,6 +1,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { SubmitHandler, useForm } from "react-hook-form"
+import Swal from 'sweetalert2'
 
 type Inputs = {
     name: string
@@ -17,6 +18,8 @@ const AddEvent = () => {
       const queryClient =  useQueryClient()
 
    
+
+
       const {mutateAsync } = useMutation({
 
         mutationFn : async(data ) => {
@@ -25,8 +28,19 @@ const AddEvent = () => {
 
         onSuccess : () => {
             queryClient.invalidateQueries({queryKey: ["event"]})
+
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Your Event has been Added",
+                showConfirmButton: false,
+                timer: 1500
+              });
         }
     })
+
+
+
 
 
       const onSubmit: SubmitHandler<Inputs> = async(data) => {
