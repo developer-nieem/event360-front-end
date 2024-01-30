@@ -6,7 +6,7 @@ export const useGetServices = () => {
     const servicesData = useQuery({
         queryKey: ["services"],
         queryFn : () => {
-            return axios.get("http://localhost:3000/services")
+            return axios.get("https://level2-assignment5-server.vercel.app/services")
         }
     })
 

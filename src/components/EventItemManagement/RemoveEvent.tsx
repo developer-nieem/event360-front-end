@@ -12,7 +12,7 @@ const RemoveEvent = ({ id }: { id: string }) => {
     const {mutateAsync} = useMutation({
      
         mutationFn : () => {
-             return axios.delete(`http://localhost:3000/event-item/${id}`)
+             return axios.delete(`https://level2-assignment5-server.vercel.app/event-item/${id}`)
         },
 
 

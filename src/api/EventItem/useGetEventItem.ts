@@ -8,7 +8,7 @@ export const useGetEventItem = () => {
     const eventItemData= useQuery({
         queryKey : ["event"],
         queryFn : () =>{
-            return axios.get("http://localhost:3000/event-item")
+            return axios.get("https://level2-assignment5-server.vercel.app/event-item")
         }
 
     })

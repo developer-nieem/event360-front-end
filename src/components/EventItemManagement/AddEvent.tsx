@@ -23,7 +23,7 @@ const AddEvent = () => {
       const {mutateAsync } = useMutation<void, AxiosError, Inputs>({
 
         mutationFn : async(data ) => {
-         return await axios.post('http://localhost:3000/event-item', data)
+         return await axios.post('https://level2-assignment5-server.vercel.app/event-item', data)
         },
 
         onSuccess : () => {

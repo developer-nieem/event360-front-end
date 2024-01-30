@@ -35,7 +35,7 @@ const EditEvent = () => {
 
   const { mutateAsync } = useMutation<void, AxiosError, Inputs>({
     mutationFn: async (data) => {
-      return await axios.put(`http://localhost:3000/event-item/${id}`, data);
+      return await axios.put(`https://level2-assignment5-server.vercel.app/event-item/${id}`, data);
     },
 
     onSuccess: () => {

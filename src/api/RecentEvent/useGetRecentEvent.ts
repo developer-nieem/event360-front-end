@@ -7,7 +7,7 @@ import axios from "axios";
     const recentData  = useQuery({
         queryKey : ["recent"],
         queryFn : () =>{
-            return axios.get("http://localhost:3000/recent-event")
+            return axios.get("https://level2-assignment5-server.vercel.app/recent-event")
         }
     })
 

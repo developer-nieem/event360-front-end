@@ -42,7 +42,7 @@ const EditRecentEvent = () => {
 
   const { mutateAsync } = useMutation<void, AxiosError, Inputs>({
     mutationFn: async (data) => {
-      return await axios.put(`http://localhost:3000/recent-event/${id}`, data);
+      return await axios.put(`https://level2-assignment5-server.vercel.app/recent-event/${id}`, data);
       
     },
 

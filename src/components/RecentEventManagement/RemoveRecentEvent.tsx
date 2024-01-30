@@ -14,7 +14,7 @@ const RemoveRecentEvent = ({ id }: { id: string }) => {
 
 const {mutateAsync} = useMutation({
     mutationFn: async() => {
-        return await axios.delete(`http://localhost:3000/recent-event/${id}`)
+        return await axios.delete(`https://level2-assignment5-server.vercel.app/recent-event/${id}`)
     },
 
     onSuccess: () => {
