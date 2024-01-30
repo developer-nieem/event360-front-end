@@ -1,7 +1,7 @@
 import { useGetEventItem } from "@/api/EventItem/useGetEventItem";
-import { Table, TableBody, TableCaption, TableCell, TableFooter, TableHead, TableHeader, TableRow } from "../ui/table";
+import { Table, TableBody,  TableCell,  TableHead, TableHeader, TableRow } from "../ui/table";
 import { IEvents } from "@/type/events/events.type";
-import { Edit, Trash } from "lucide-react";
+import { Edit } from "lucide-react";
 import { Link } from "react-router-dom";
 import RemoveEvent from "./RemoveEvent";
 

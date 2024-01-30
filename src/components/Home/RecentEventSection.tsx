@@ -14,17 +14,13 @@ import 'swiper/css/navigation';
 // import required modules
 import {  Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 import { IRecentEvent } from "@/type/recentEvent/recentEvent.type";
+import { useGetRecentEvent } from "@/api/RecentEvent/useGetRecentEvent";
 
 
 const RecentEventSection = () => {
 
     
-    const {data , isLoading , isError} = useQuery({
-        queryKey : ["recent"],
-        queryFn : () =>{
-            return axios.get("http://localhost:3000/recent-event")
-        }
-    })
+    const {data , isLoading , isError} = useGetRecentEvent()
 
     if (isLoading) {
         return ;
