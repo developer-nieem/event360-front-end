@@ -1,30 +1,68 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Event 360
 
-Currently, two official plugins are available:
+- This repository contains a React-based event landing page showcasing event services, event items, and dynamically displaying recent events. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- I utilize the "more" section . Kindly follow the live link 
 
-## Expanding the ESLint configuration
+- Dashboard is implemented for managing events and recent event items, allowing users to perform CRUD (Create, Read, Update, Delete) operations.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+### 🚀 [Demo]()
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+
+
+## Technologies Used
+
+- React , React Router DOM
+- TypeScript 
+- ShadCN , Tailwind CSS
+- Data Fetching : TarnStack Query , Axios
+- Animation  : Framer Motion, AOS
+- sweetalert2 ,  swiper
+
+
+## ⚙ Installation
+
+Follow these steps to set up and run the project locally.
+
+### Prerequisites
+
+Make sure you have the following software installed on your machine:
+
+- Node.js: [Download Node.js](https://nodejs.org/)
+- npm (Node Package Manager): It comes with Node.js installation.
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/programming-hero-web-course1/l2-b2-assignment-5-frontend-developer-nieem
+
+cd your-project-folder
+
+```
+### Install Dependencies
+
+```bash
+npm install
+
+```
+### Start the Development Server
+
+```bash
+npm run dev
+
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+### Build The project
+
+```bash
+
+npm run build
+
+
+```
+
+### 🌟 Lets Use dist folder 
+
