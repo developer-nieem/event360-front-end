@@ -18,7 +18,7 @@ const GallerySection = () => {
           <div className=" text-white space-y-3 pt-24">
             <img
               className=" w-56 -mb-[70px] overflow-hidden"
-              src="../../../src/assets/Vector14.png"
+              src="/Vector14.png"
               alt="service"
             />
             <h2 className="text-6xl font-bold  ">Gallery</h2>

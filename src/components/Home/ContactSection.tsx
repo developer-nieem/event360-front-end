@@ -50,7 +50,7 @@ const controls =  useAnimation()
         <div className="col-span-12 md:col-span-8 pt-10 flex justify-end items-center">
                 <motion.img ref={myRef} animate={controls} style={{
                      scale: scaleValues, opacity:opacityValues
-                }} src="../../../src/assets/graph-jasmine-f.png" alt="contact" />
+                }} src="/graph-jasmine-f.png" alt="contact" />
         </div>
         </div>
       </Container>

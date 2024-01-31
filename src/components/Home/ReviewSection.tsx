@@ -50,7 +50,7 @@ const ReviewSection = () => {
         <div className="text-white space-y-3 mb-8">
           <img
             className="  -mb-[70px] overflow-hidden"
-            src="../../../src/assets/Vector14.png"
+            src="/Vector14.png"
             alt="service"
           />
           <h2 className="text-6xl font-bold  ">What everyone says</h2>

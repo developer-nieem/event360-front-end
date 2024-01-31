@@ -8,7 +8,7 @@
 - Dashboard is implemented for managing events and recent event items, allowing users to perform CRUD (Create, Read, Update, Delete) operations.
 
 
-### 🚀 [Demo]()
+### 🚀 [Live Link](https://projects-event360.netlify.app/)
 
 
 
