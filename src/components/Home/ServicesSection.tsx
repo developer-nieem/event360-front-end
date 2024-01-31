@@ -5,6 +5,10 @@ import { Check } from "lucide-react";
 import SectionHeading from "../ui/SectionHeading";
 
 const ServicesSection = () => {
+
+
+
+
   const { data, isLoading, isError } = useGetServices();
 
   if (isLoading) {
@@ -13,6 +17,9 @@ const ServicesSection = () => {
   if (isError) {
     return ;
   }
+
+ 
+
 
   return (
     <div className="bg-[#0F172A]">
