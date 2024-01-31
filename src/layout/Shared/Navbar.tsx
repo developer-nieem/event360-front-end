@@ -17,7 +17,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-[#02011B] py-6">
+    <div className="bg-[#02011B] py-6 overflow-x-hidden">
       <Container>
         <nav className="flex justify-between items-center">
           <div>

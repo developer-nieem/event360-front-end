@@ -3,6 +3,7 @@ import Container from "@/layout/Shared/Container";
 import { IService } from "@/type/services/service.type";
 import { Check } from "lucide-react";
 import SectionHeading from "../ui/SectionHeading";
+import { cn } from "@/lib/utils";
 
 const ServicesSection = () => {
 
@@ -18,9 +19,6 @@ const ServicesSection = () => {
     return ;
   }
 
- 
-
-
   return (
     <div className="bg-[#0F172A]">
       <Container>
@@ -32,15 +30,17 @@ const ServicesSection = () => {
         <div className="grid grid-cols-12 gap-4 py-14  text-white">
           {data?.data.map((service: IService) => (
             <div
-              className=" col-span-12 md:col-span-6  lg:col-span-4 bg-[#070B15] p-6"
+              className={cn(` col-span-12 md:col-span-6 h-full lg:col-span-4 bg-[#070B15] p-6 `)}
               key={service._id}
+          
             >
               <div className="space-y-4">
                 <img
-                  className="rounded-md"
+                  className="rounded-md "
                   src={service.image}
                   alt="service event"
                 />
+           
                 <h2 className="text-3xl text-left">{service.name}</h2>
                 <div>
                   {service?.features?.map((feature) => (
@@ -48,8 +48,12 @@ const ServicesSection = () => {
                       <Check className="bg-[#1F1F2A] rounded-full p-1" />{" "}
                       {feature}
                     </div>
+
+                    
                   ))}
                 </div>
+            
+
               </div>
             </div>
           ))}

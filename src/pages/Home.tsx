@@ -10,7 +10,7 @@ import SubscribeSection from "@/components/Home/SubscribeSection";
 
 const Home = () => {
     return (
-        <div >
+        <div className="overflow-x-hidden" >
            <HeaderSection/>
           <ServicesSection/>
           <EventSection/>

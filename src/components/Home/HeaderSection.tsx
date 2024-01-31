@@ -13,7 +13,7 @@ const HeaderSection = () => {
 
 
     return (
-               <header className="bg-[#02011B] pb-14">
+               <header className="bg-[#02011B] pb-14 ">
                 <Container>
                 <div className="grid pt-10 grid-cols-12 text-white gap-5">
                         <div data-aos="fade-right" className="col-span-12 lg:col-span-7 header-left h-[708px] flex flex-col justify-end px-11 pb-10 gap-2">
